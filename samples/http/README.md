@@ -1,4 +1,4 @@
-#### HTTP client sample
+## HTTP client sample
 ```
 $> ballerina run http_client.bal 
 GET request:
@@ -17,23 +17,32 @@ Content-Type: application/json; charset=utf-8
 Status code: 20
 ```
 
-#### Access the service (basic_01)
+## Access the service (basic_01)
 ```
-$ curl -v localhost:9090/hello/sayHello
+$> ballerina run http_service_basic_01.bal 
+[ballerina/http] started HTTP/WS listener 0.0.0.0:9090
+
+$> curl -v localhost:9090/hello/sayHello
 
 Hello, World!
 ```
 
-#### Access the service (basic_02)
+## Access the service (basic_02)
 ```
-$ curl -v http://localhost:9090/foo/bar -d "{\"hello\": \"world\"}" -H "Content-Type: application/json"
+$> ballerina run http_service_basic_02.bal 
+[ballerina/http] started HTTP/WS listener 0.0.0.0:9090
+
+$> curl -v http://localhost:9090/foo/bar -d "{\"hello\": \"world\"}" -H "Content-Type: application/json"
 
 {"hello": "world"}
 ```
 
-#### Access the service (data_binding)
+## Access the service (data_binding)
 ```
-$ curl -v http://localhost:9090/hello/bindJson -d '{ "Details": { "ID": "77999", "Name": "XYZ"} , "Location": { "No": "01", "City": "Colombo"}}' -H "Content-Type:application/json"
+$> ballerina run http_service_data_binding.bal 
+[ballerina/http] started HTTP/WS listener 0.0.0.0:9090
+
+$> curl -v http://localhost:9090/hello/bindJson -d '{ "Details": { "ID": "77999", "Name": "XYZ"} , "Location": { "No": "01", "City": "Colombo"}}' -H "Content-Type:application/json"
 
 {"ID":"77999","Name":"XYZ"}
 
@@ -42,12 +51,15 @@ $ curl -v http://localhost:9090/hello/bindStruct -d '{ "Name": "John", "Grade": 
 {"Name":"John","Grade":12}
 ```
 
-#### Access the service (passthrough)
+## Access the service (passthrough)
 ```
-$ curl http://localhost:9090/passthrough -X POST
+$> ballerina run http_service_passthrough.bal 
+[ballerina/http] started HTTP/WS listener 0.0.0.0:9090
+
+$> curl http://localhost:9090/passthrough -X POST
 Hello World!
-$ curl http://localhost:9090/passthrough -X GET
+$> curl http://localhost:9090/passthrough -X GET
 Hello World!
-$ curl http://localhost:9090/passthrough -X PUT
+$> curl http://localhost:9090/passthrough -X PUT
 Hello World!
 ```
