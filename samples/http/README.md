@@ -1,3 +1,22 @@
+#### HTTP client sample
+```
+$> ballerina run http_client.bal 
+GET request:
+{"args":{"test":"123"}, "headers":{"x-forwarded-proto":"https", "host":"postman-echo.com", "user-agent":"ballerina/1.0.0-alpha3", "x-forwarded-port":"443"}, "url":"https://postman-echo.com/get?test=123"}
+
+
+POST request:
+{"args":{}, "data":"POST: Hello World", "files":{}, "form":{}, "headers":{"x-forwarded-proto":"https", "host":"postman-echo.com", "content-length":"17", "content-type":"text/plain", "user-agent":"ballerina/1.0.0-alpha3", "x-forwarded-port":"443"}, "json":null, "url":"https://postman-echo.com/post"}
+
+
+DELETE request:
+{"args":{}, "data":"DELETE: Hello World", "files":{}, "form":{}, "headers":{"x-forwarded-proto":"https", "host":"postman-echo.com", "content-length":"19", "content-type":"text/plain", "user-agent":"ballerina/1.0.0-alpha3", "x-forwarded-port":"443"}, "json":null, "url":"https://postman-echo.com/delete"}
+
+
+Content-Type: application/json; charset=utf-8
+Status code: 20
+```
+
 #### Access the service (basic_01)
 ```
 $ curl -v localhost:9090/hello/sayHello
