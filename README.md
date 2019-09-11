@@ -11,3 +11,4 @@ To learn more about Ballerina visit https://ballerina.io.
 Please add your git repo link here
 
 - sample 1 (git repo link)
+- sample 2 (git repo link)
