@@ -1,13 +1,13 @@
 # BallerinaHackathon-ApacheCon2019
 
-Come hack some Ballerina code! Ballerina is a statically typed, concurrent programming language, focusing on network interaction and structured data. It is intended to be the core of a language-centric middleware platform. At the Ballerina Hackathon room, you can meet the language creators and learn
+This repo contains the work that was submitted during the Ballerina Hackathon at ApacheCon North America 2019, which was held from September 11 - 12.
 
-- The basics of the language
-- How you can design and implement microservices using Ballerina
-- How to easily deploy Ballerina artifacts to Kubernetes and Docker
+To stand a chance to win 4 VIP tickets to the #1 show in Las Vegas, submit your GitHub repo here. We will then review and select the best project at the end of each day.
 
-Join us at Lake Mead I and II on Wednesday, September 11 on the lower level. Hack some code and win 4 front row tickets to the #1 greatest show in Las Vegas history - Absinthe. Learn more at https://ballerina.io.
+To learn more about Ballerina visit https://ballerina.io.
 
 ## Hackathon Work
 
-Submit your github repo
+Please add your git repo link here
+
+- sample 1 (git repo link)
