@@ -10,6 +10,6 @@ To learn more about Ballerina visit https://ballerina.io.
 
 Please add your git repo link here
 
-- slack module - https://github.com/sibbsnb/module-slack) - team hackbros
+- Slack module - https://github.com/sibbsnb/module-slack) - team hackbros
   reusuable Ballerina slack connect module to send messages to slack
-- sample 2 (git repo link)
+- Wolfram module https://github.com/curtis0112358/module-wolfram
